@@ -1,0 +1,300 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .brandName {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .brandSub {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: 170;
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
+  .logo_1 {
+    width: 225px;
+    margin-right: 60px;
+    mix-blend-mode: color-burn;
+  }
+  
+  .brandName_1 {
+    font-size: 150px;
+    font-weight: bold;
+  }
+  
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchInput,
+  .searchInput_1 {
+    height: 30px;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 0 auto 20px;
+  }
+  
+  .searchResults {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .userProfile {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .profilePhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .userProfile h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .userProfile p {
+    margin: 5px 0;
+  }
+  
+  .profileLine {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  .profileDetails {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .fetchButton {
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .fetchButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    /* text-align: center; */
+  }
+  
+  .modalContent img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .modalContent h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modalContent p {
+    margin: 5px 0;
+  }
+  
+  .closeButton {
+    background-color: #f8f9fa;
+    color: #000000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .closeButton:hover {
+    background-color: #a2a5a9;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets */
+  @media (max-width: 768px) {
+    .header {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .brandName {
+      font-size: 20px;
+    }
+  
+    .brandSub {
+      font-size: 12px;
+    }
+  
+    .navLink {
+      font-size: 14px;
+    }
+  
+    .searchInput,
+    .searchInput_1 {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .searchResults {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .modalContent {
+      width: 90%;
+      max-width: 350px;
+    }
+  
+    .modalContent img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .brandName {
+      font-size: 18px;
+    }
+  
+    .brandSub {
+      font-size: 10px;
+    }
+  
+    .navLink {
+      font-size: 12px;
+    }
+  
+    .searchInput,
+    .searchInput_1 {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .searchResults {
+      grid-template-columns: 1fr;
+    }
+  
+    .modalContent {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .modalContent img {
+      width: 100px;
+      height: 100px;
+    }
+  }
